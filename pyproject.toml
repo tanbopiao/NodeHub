@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nodehub"
+version = "0.1.0"
+description = "NodeHub — Git-bootstrapped command mesh for autonomous agent fleets: zero-credential workers, identity+safety gates, content-pinned baseline boot."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [{ name = "ZONGYUAN-ROOT contributors" }]
+keywords = ["agent", "distributed", "mesh", "fleet", "bootstrapping", "ai-safety"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: System :: Distributed Computing",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["nodehub"]
